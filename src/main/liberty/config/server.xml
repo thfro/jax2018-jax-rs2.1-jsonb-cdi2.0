@@ -1,0 +1,18 @@
+<server description="Sample Servlet server">
+    <featureManager>
+        <!--
+        <feature>javaee-8.0</feature>
+        <feature>webProfile-8.0</feature>
+        -->
+        <feature>jaxrs-2.1</feature>
+        <feature>jsonb-1.0</feature>
+        <feature>cdi-2.0</feature>
+        <feature>concurrent-1.0</feature>
+        <feature>beanValidation-2.0</feature>
+
+    </featureManager>
+
+    <httpEndpoint httpPort="${default.http.port}" httpsPort="${default.https.port}" id="defaultHttpEndpoint" host="*" />
+
+    <webApplication id="JavaEE8Samples" location="server-samples.war" contextRoot="${app.context.root}" />
+</server>
